@@ -116,9 +116,7 @@ define(function (require, exports, module) {
             return;
         }
 
-
-        var lines = doc.getText(false).split("\n");
-        var list = lang.getOutlineList(lines, prefs.get("args"), prefs.get("unnamed"));
+        var list = lang.getOutlineList(doc.getText(false), prefs.get("args"), prefs.get("unnamed"));
 
         list.reverse();
 
